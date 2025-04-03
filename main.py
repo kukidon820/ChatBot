@@ -10,6 +10,7 @@ import telebot
 from telebot.types import ReplyKeyboardMarkup
 import threading
 import json
+from dotenv import load_dotenv
 
 
 class ArbitrageBot:
@@ -278,5 +279,6 @@ class ArbitrageBot:
 
 
 if __name__ == '__main__':
+    load_dotenv()
     bot = ArbitrageBot()
     bot.start()
